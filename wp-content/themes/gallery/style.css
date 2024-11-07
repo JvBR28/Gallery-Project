@@ -1,0 +1,14 @@
+/*
+Theme Name: Gallery Project
+Theme URI: 
+Author: João Victor Braga Rodrigues
+Author URI: 
+Description: Tema para projeto de Galeria
+Version: 1.0
+Tags: gallery, api, image
+ 
+*/
+ 
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
