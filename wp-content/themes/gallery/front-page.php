@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<div class="max-w-4xl mx-auto p-8 px-20">
-    <div class="mb-8 flex items-center space-x-4">
+<div class="max-w-4xl mx-auto p-8 md:px-20">
+    <div class="mb-8 flex flex-col space-y-4 md:flex-row md:items-center md:space-y-0 md:space-x-4">
         <h2 class="text-lg font-semibold text-blue-600">Inserir nova imagem</h2>
         <div id="add-image-button" class="bg-gray-50 border-dashed border-2 border-gray-400 rounded-md py-2 px-12 flex justify-center items-center cursor-pointer hover:border-gray-500">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hand-tap.svg" alt="HandTap Icon" class="h-6 w-6 text-gray-600" />
@@ -13,7 +13,7 @@
         <h3 class="text-xl font-semibold text-gray-800">Imagens</h3>
     </div>
     
-    <div class="mt-4 grid grid-cols-4 gap-4 rounded-md">
+    <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 rounded-md">
         <?php
         global $wpdb;
         $table_name = $wpdb->prefix . 'gallery_images';
